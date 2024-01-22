@@ -63,6 +63,7 @@ const y = '2' + 3; // 문자열 23
 
 // 타입스크립트에서 에러 자바스크립트에서는 정상적으로 동작하는 경우
 // 자바스크립트 동작: https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-applystringornumericbinaryoperator
+// https://v8.dev/blog/understanding-ecmascript-part-1
 const a = null + 2; // 2 : null 이 0으로 변경
 const b= [] + 12;   // 문자열 12 : [].toString() 이 '' --> '' + 12
 
