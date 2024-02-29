@@ -5,6 +5,8 @@
 
 import zipObject from 'lodash/zipObject';
 import maxBy from 'lodash/maxBy';
+import groupBy from 'lodash/groupBy';
+import mapValues from 'lodash/mapValues';
 import _ from 'lodash';
 
 const csvData =  '';
@@ -56,7 +58,7 @@ for (const players of Object.values(teamPlayers)) {
     players.sort((a,b) => b.salary - a.salary);
 }
 
-...
+// 먼가 복잡한 로직
 
 const bestPaid = _(allPlayer)
     .groupBy(player => player.team)
