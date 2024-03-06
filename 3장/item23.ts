@@ -54,6 +54,12 @@ declare let hasMiddle: boolean;
 const firstLast = {first: 'wwww', last: 'bbbbb'};
 const persident = {...firstLast, ...(hasMiddle ? {middle: 'wdwdwdw'} : {}) }
 
+const nameTitle = {name: 'wdwdw', title: 'wdwdwdwd'};
+const pharaoh = {
+    ...nameTitle,
+    ...(hasMiddle ? {start: 23232, end: 232323} :  {})
+};
+
 function addOptional<T extends object, U extends object>(a: T, b: U | undefined): T & Partial<U> {
     return {...a, ...b};
 }
