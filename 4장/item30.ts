@@ -26,8 +26,4 @@ function getForegroundColor(page?: string) {
 // 주석을 사용할 것이면 동기화를 잘하자.
 // 값을 변경하지 않는다고 주석달지 말고 readonly 를 활용하자.
 
-
-
-
-
 export {};
