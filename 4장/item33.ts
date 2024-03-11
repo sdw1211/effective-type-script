@@ -79,5 +79,8 @@ function pluck4<T, K extends keyof T>(records: T[], key: K): T[K][] {
 
 const releaseDate2 = pluck4(albums, 'releaseDate');
 
+interface Aaa {
+    readonly a: number;
+}
 
 export {};
