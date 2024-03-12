@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sdw1211/effective-type-script#readme",
   "devDependencies": {
+    "@types/geojson": "^7946.0.14",
     "@types/lodash": "^4.14.202",
     "typescript": "^5.3.3"
   },
