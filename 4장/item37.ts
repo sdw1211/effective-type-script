@@ -1,7 +1,7 @@
 // 아이템37 공식 명칭에는 상표 붙이기
 
 type Vector2D = {
-    // _brand: '2D';
+    _brand: '2D';
     x: number;
     y: number;
 }
@@ -19,7 +19,7 @@ calculateNorm(vec3D);
 
 // 상표를 사용할 때는 생성자 함수를 하나 만들어준다.
 function vec2D(x: number, y: number): Vector2D {
-    return {x,y,_brand: '2D'};
+    return {x, y, _brand: '2D'};
 }
 
 calculateNorm(vec2D(1,3));
