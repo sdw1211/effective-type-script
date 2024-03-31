@@ -1,6 +1,8 @@
-// 아이템43 몽키 패키보다는 안전한 타입을 사용하기
+// 아이템43 몽키 패치보다는 안전한 타입을 사용하기
 
+// 몽키 패치란? https://donggov.tistory.com/211
 // 자바스크립트의 가장 유명한 특징 중 하나는 객체와 클래스에 임의의 속성을 추가할 수 있을 만큼 유연하다는 것
+
 window.monkey = 'AAAAA';
 document.monkey = 'BBBBBBB';
 

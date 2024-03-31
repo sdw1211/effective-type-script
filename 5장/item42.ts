@@ -35,10 +35,15 @@ function safeParseYAML(yaml: string): unknown {
 // 어떠한 타입이든 any 타입에 할당 가능
 // any 타입은 어떠한 타입으로도 할당 가능
 
+const aaa2: any = 'wdwdwdwd';
+const bbb2: number = aaa2;
+
 // unkown 
-// 어떠한 타입이든 any 타입에 할당 가능
+// 어떠한 타입이든 unkown 타입에 할당 가능
 // unkown 타입은 어떠한 타입으로도 할당 불가능
 
+const aaa: unknown = 'wdwdwdwd';
+const bbb: number = aaa;
 
 const book3 = safeParseYAML(`
     name: efefefefef
