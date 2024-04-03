@@ -7,7 +7,7 @@ class Diary {
 }
 
 const diary = new Diary();
-// diary.secret;
+diary.secret;
 (diary as any).secret;
 
 // public protected private 같은 접근 제어자는 타입스크립트 키워드 이기 때문에 트랜스파일 후 제거
@@ -24,14 +24,23 @@ class PasswordChecker {
     }
 }
 
+
+
 const checker = new PasswordChecker(hash('ssss'));
 checker.checkPassword('aaaa');
 
 class Diary2 {
-    #secret = 'dwdwdwwdwd';
+    #paswordHash:number;
+    constructor(paswordHash: number) {
+        this.#paswordHash = paswordHash;
+    }
+
+    checkPassword(password: string) {
+        return hash(password) === this.#paswordHash;
+    }
 }
 
-const diary2 = new Diary2();
+const diary2 = new Diary2(12121212);
 // diary.secret;
 (diary as any).secret;
 
